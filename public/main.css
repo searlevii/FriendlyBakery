@@ -1,5 +1,5 @@
 * {
-    
+
 }
 body {
     background-color: #a0522d;
@@ -101,4 +101,9 @@ body {
 }
 .card img {
     width: 100%
+}
+footer {
+    margin-top: 2000px;
+    background-color: #000;
+    bottom: 0;
 }
