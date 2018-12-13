@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cakes</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+        <script src="main.js"></script>
+    </head>
+<body>
+    <%= erb :'partials/header' %> 
+        <div class=card>
+            <h2> 
+                <%= @paopu.name %>
+            </h2>
+            <img src="<%= @paopu.image %>">
+            <p>
+                <%= @paopu.description %>
+            </p>
+            <p> 
+                <%= @paopu.price %>
+            </p>
+        </div>
+        <div class=card>
+            <h2> 
+                <%= @heartless.name %>
+            </h2>
+            <img src="<%= @heartless.image %>">
+            <p>
+                <%= @heartless.description %>
+            </p>
+            <p> 
+                <%= @heartless.price %>
+            </p>
+        </div>
+        <div class=card>
+            <h2> 
+                <%= @phantomT.name %>
+            </h2>
+            <img src="<%= @phantomT.image %>">
+            <p>
+                <%= @phantomT.description %>
+            </p>
+            <p> 
+                <%= @phantomT.price %>
+            </p>
+        </div>
+        <div class=card>
+            <h2> 
+                <%= @midgar.name %>
+            </h2>
+            <img src="<%= @midgar.image %>">
+            <p>
+                <%= @midgar.description %>
+            </p>
+            <p> 
+                <%= @midgar.price %>
+            </p>
+        </div>
+        <div class=card>
+            <h2> 
+                <%= @moogleCake.name %>
+            </h2>
+            <img src="<%= @moogleCake.image %>">
+            <p>
+                <%= @moogleCake.description %>
+            </p>
+            <p> 
+                <%= @moogleCake.price %>
+            </p>
+        </div>
+        <div class=card>
+            <h2> 
+                <%= @elegant.name %>
+            </h2>
+            <img src="<%= @elegant.image %>">
+            <p>
+                <%= @elegant.description %>
+            </p>
+            <p> 
+                <%= @elegant.price %>
+            </p>
+        </div>
+    <%= erb :'partials/footer' %>  
+</body>
+</html>

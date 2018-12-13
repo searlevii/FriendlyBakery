@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Cookies</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+        <script src="main.js"></script>
+    </head>
+    <body>
+    <%= erb :'partials/header' %> 
+        <div class=card>
+            <h2> 
+                <%= @chococookie.name %>
+            </h2>
+            <img src="<%= @chococookie.image %>">
+            <p>
+                <%= @chococookie.description %>
+            </p>
+            <p> 
+                <%= @chococookie.price %>
+            </p>
+        </div>
+        <div class=card>
+            <h2> 
+                <%= @tonberry.name %>
+            </h2>
+            <img src="<%= @tonberry.image %>">
+            <p>
+                <%= @tonberry.description %>
+            </p>
+            <p> 
+                <%= @tonberry.price %>
+            </p>
+        </div>
+        <div class=card>
+            <h2> 
+                <%= @bomb.name %>
+            </h2>
+            <img src="<%= @bomb.image %>">
+            <p>
+                <%= @bomb.description %>
+            </p>
+            <p> 
+                <%= @bomb.price %>
+            </p>
+        </div>
+        <div class=card>
+            <h2> 
+                <%= @moogle.name %>
+            </h2>
+            <img src="<%= @moogle.image %>">
+            <p>
+                <%= @moogle.description %>
+            </p>
+            <p> 
+                <%= @moogle.price %>
+            </p>
+        </div>
+        <div class=card>
+            <h2> 
+                <%= @cactuar.name %>
+            </h2>
+            <img src="<%= @cactuar.image %>">
+            <p>
+                <%= @cactuar.description %>
+            </p>
+            <p> 
+                <%= @cactuar.price %>
+            </p>
+        </div>
+        <div class=card>
+            <h2> 
+                <%= @ffGinger.name %>
+            </h2>
+            <img src="<%= @ffGinger.image %>">
+            <p>
+                <%= @ffGinger.description %>
+            </p>
+            <p> 
+                <%= @ffGinger.price %>
+            </p>
+        </div>
+    <%= erb :'partials/footer' %>  
+</body>
+</html>

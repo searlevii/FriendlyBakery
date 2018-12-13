@@ -3,47 +3,14 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Page Title</title>
+        <title>Homepage</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
         <script src="main.js"></script>
     </head>
 <body>
-    <header>
-        <div class="banner">
-            <img src="ffcookies.jpg">
-        </div>
-        <div class="logo">
-            <a href="/home.erb">
-                <img src="">
-            </a>
-        </div>
-        <div class="navigation">
-            <a href="/about.erb"> 
-                About Us
-            </a>
-            <a href="/contact.erb">
-            Contact Us
-            </a>
-            <div class="drop">
-                <p class="drophover">
-                    Menu
-                    <i class="fa fa-chevron-circle-down"></i>
-                </p>
-                <div class="products">
-                    <a href="/cookies.erb">
-                        Cookies
-                    </a>
-                    <a href="/muffins.erb">
-                        Muffins
-                    </a>
-                    <a href="/cakes.erb">
-                        Cakes
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>           
+    <%= erb :'partials/header' %> 
+    <%= erb :'partials/footer' %>  
 </body>
 </html>

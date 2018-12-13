@@ -1,9 +1,52 @@
-class Muffins 
-    attr_accessor :price, :description, :image
-    def initialize (price, description, image)
-        @price = price
-        @description = description
-        @image = image
-    end
-end
-        
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Homepage</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
+        <script src="main.js"></script>
+    </head>
+    <body>
+    <%= erb :'partials/header' %> 
+        <div class=card>
+            <h2> 
+                <%= @honey.name %>
+            </h2>
+            <img src="<%= @honey.image %>">
+            <p>
+                <%= @honey.description %>
+            </p>
+            <p> 
+                <%= @honey.price %>
+            </p>
+        </div>
+        <div class=card>
+            <h2> 
+                <%= @blueberry.name %>
+            </h2>
+            <img src="<%= @blueberry.image %>">
+            <p>
+                <%= @blueberry.description %>
+            </p>
+            <p> 
+                <%= @blueberry.price %>
+            </p>
+        </div>
+        <div class=card>
+            <h2> 
+                <%= @appmuffins.name %>
+            </h2>
+            <img src="<%= @appmuffins.image %>">
+            <p>
+                <%= @appmuffins.description %>
+            </p>
+            <p> 
+                <%= @appmuffins.price %>
+            </p>
+        </div>
+    <%= erb :'partials/footer' %>  
+</body>
+</html>
