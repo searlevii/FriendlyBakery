@@ -19,7 +19,7 @@ get '/cakes' do
     @phantomT = Cakes.new('Phantom Thieves Cake (Persona 5)', '$15', 'An extremely delicious cake that will take your heart. You\'ll never see the flavor coming.', 'phantomcake.jpg')
     @midgar = Cakes.new('Midgar (Final Fantasy 7)', '$25', 'A large chocolate cookie cake that will help you break your limits!', 'midgarcake.jpg')
     @moogleCake = Cakes.new('Moogle', '$25', 'A large vanilla cake with cookies, kupo!', 'mooglecake.jpg')
-    @elegant = Cakes.new('Elegant Orange Cake', '$15', 'A recipeh from Final Fantasy XV courtesy of Ignis. Contains oranges!', 'orangepoundcake.png')
+    @elegant = Cakes.new('Elegant Orange Cake', '$15', 'A recipeh from Final Fantasy XV courtesy of Ignis. Contains oranges!', 'orangepoundcake.jpg')
     erb :cakes
 end
 
@@ -29,7 +29,7 @@ get '/cookies' do
     @bomb = Cookies.new('Cookie Bomb', '$2', 'A sugar cookie with cinnamon icing that will make your taste buds explode like a Bomb!', 'sugarcookies.jpg')
     @moogle = Cookies.new('Moogle', '$2', 'A vanilla cookie with vanilla and strawberry icing that will make you say kupo at the end of every sentence, kupo!', 'sugarcookies.jpg')
     @cactuar = Cookies.new('Cactuar', '$2', 'A green tea flavored sugar cookie that will make you spin around on one leg like a Cactuar!', 'sugarcookies.jpg')
-    @ffGinger = Cookies.new('Gingerbread Cookies', '$1', 'Gingerbread cookies that come in the shape of various allies and enemies!', 'ffGinger.jpg')
+    @ffGinger = Cookies.new('Gingerbread Cookies', '$1', 'Gingerbread cookies that come in the shape of various allies and enemies!', 'ffginger.jpg')
     erb :cookies
 end
 
